@@ -28,33 +28,33 @@ const MainPage = () => {
   };
 
   return (
-    <div className="main-container">
-      {/* 메뉴바 추가 */}
-      <div className="navbar">
-        <button onClick={() => handleNavigate('/introduce')}>Introduce</button>
-        <button onClick={() => handleNavigate('/contact')}>Contact</button>
-      </div>
-      <h1>Practice and memorize Japanese Numbers 😁</h1>
-      <div className="range-selection">
-        <p>Pick a range:</p>
-        <div className="button-container">
-          {ranges.map((range, index) => (
-            <button
-              key={index}
-              onClick={() => setSelectedRange(range.value)}
-              className={`range-button ${selectedRange === range.value ? 'active' : ''}`}
-            >
-              {range.label}
-            </button>
-          ))}
-        </div>
-      </div>
-      {selectedRange && (
-        <button className="play-button" onClick={handlePlay}>
-          Play
-        </button>
-      )}
+    <><div className="navbar">
+      <button onClick={() => handleNavigate('/introduce')}>what is that?</button>
+      <button onClick={() => handleNavigate('/contact')}>Me?</button>
     </div>
+    <h1>Practice and memorize Japanese Numbers 😁</h1>
+    <div className="main-container">
+        {/* 메뉴바 추가 */}
+        <div className="range-selection">
+          <p>Pick a range:</p>
+          <div className="button-container">
+            {ranges.map((range, index) => (
+              <button
+                key={index}
+                onClick={() => setSelectedRange(range.value)}
+                className={`range-button ${selectedRange === range.value ? 'active' : ''}`}
+              >
+                {range.label}
+              </button>
+            ))}
+          </div>
+        </div>
+        {selectedRange && (
+          <button className="play-button" onClick={handlePlay}>
+            Play
+          </button>
+        )}
+      </div></>
   );
 };
 
