@@ -36,7 +36,21 @@
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #008CBA;
+  background-color: #00bbff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.home {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00bbff;
   color: white;
   border: none;
   border-radius: 5px;

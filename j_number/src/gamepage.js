@@ -97,7 +97,7 @@ const GamePage = () => {
         onClick={handleHome}
         className='home'
       >
-        홈으로 가기
+        Home
       </button>
     </>
   );

@@ -29,8 +29,8 @@ const MainPage = () => {
 
   return (
     <><div className="navbar">
-      <button onClick={() => handleNavigate('/introduce')}>what is that?</button>
-      <button onClick={() => handleNavigate('/contact')}>Me?</button>
+      <button onClick={() => handleNavigate('/introduce')}>pre-practice</button>
+      <button onClick={() => handleNavigate('/contact')}>🍅?</button>
     </div>
     <h1>Practice and memorize Japanese Numbers 😁</h1>
     <div className="main-container">
