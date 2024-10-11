@@ -1,10 +1,12 @@
+// src/GamePage.js
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import questions from './numbers.json'; // JSON 파일 경로
 import './gamepage.css'; // CSS 파일 경로
 
 const GamePage = () => {
   const location = useLocation();
+  const navigate = useNavigate(); // useNavigate 추가
   const { range } = location.state || {}; // 메인페이지에서 선택한 범위 가져오기
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [score, setScore] = useState(0);
@@ -49,12 +51,17 @@ const GamePage = () => {
     setCurrentQuestion(null); // 초기화
   };
 
+  const handleHome = () => {
+    navigate('/'); // 홈 버튼 클릭 시 메인 페이지로 이동
+  };
+
   if (questionIndex >= filteredQuestions.length) {
     return (
       <div className="game-container">
         <h1>게임 끝!</h1>
         <p>점수: {score}</p>
-        <button onClick={handleRestart}>다시 시작하기</button>
+        <button onClick={handleRestart} className="retry-button">다시 시작하기</button>
+        <button onClick={handleHome} className="next-button">홈으로 가기</button>
       </div>
     );
   }
@@ -64,17 +71,18 @@ const GamePage = () => {
   }
 
   return (
-    <><div className="game-container">
-      <h2 className="question">{currentQuestion.japanese}</h2>
-      {userAnswer !== null && (
-        <div className="result-message">
-          <p>
-            {userAnswer === currentQuestion.number ? '정답입니다!' : '틀렸습니다.'}
-          </p>
-        </div>
-      )}
-    </div>
-    <div className='answer_wrap'>
+    <>
+      <div className="game-container">
+        <h2 className="question">{currentQuestion.japanese}</h2>
+        {userAnswer !== null && (
+          <div className="result-message">
+            <p>
+              {userAnswer === currentQuestion.number ? '정답입니다!' : '틀렸습니다.'}
+            </p>
+          </div>
+        )}
+      </div>
+      <div className='answer_wrap'>
         {currentQuestion.options.map((option) => (
           <button
             key={option}
@@ -84,8 +92,25 @@ const GamePage = () => {
             {option}
           </button>
         ))}
-      </div></>
-    
+      </div>
+      <button 
+        onClick={handleHome}
+        className='home'
+        style={{
+          marginTop: '20px',
+          padding: '10px 20px',
+          fontSize: '16px',
+          backgroundColor: '#008CBA',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          transition: 'background-color 0.3s',
+        }}
+      >
+        홈으로 가기
+      </button>
+    </>
   );
 };
 
