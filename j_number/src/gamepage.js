@@ -96,17 +96,6 @@ const GamePage = () => {
       <button 
         onClick={handleHome}
         className='home'
-        style={{
-          marginTop: '20px',
-          padding: '10px 20px',
-          fontSize: '16px',
-          backgroundColor: '#008CBA',
-          color: 'white',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-          transition: 'background-color 0.3s',
-        }}
       >
         홈으로 가기
       </button>

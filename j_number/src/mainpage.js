@@ -23,8 +23,17 @@ const MainPage = () => {
     navigate('/game', { state: { range: selectedRange } });
   };
 
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="main-container">
+      {/* 메뉴바 추가 */}
+      <div className="navbar">
+        <button onClick={() => handleNavigate('/introduce')}>Introduce</button>
+        <button onClick={() => handleNavigate('/contact')}>Contact</button>
+      </div>
       <h1>Practice and memorize Japanese Numbers 😁</h1>
       <div className="range-selection">
         <p>Pick a range:</p>

@@ -1,0 +1,22 @@
+.introduce-container {
+  text-align: center;
+  padding: 40px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* 최대 너비 조정 */
+}
+
+.introduce-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.introduce-container p {
+  color: #555;
+  line-height: 1.6; /* 줄 간격 조정 */
+  font-size: 1.1rem; /* 폰트 크기 조정 */
+  margin: 10px 0;
+}
