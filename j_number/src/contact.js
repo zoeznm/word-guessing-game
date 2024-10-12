@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="container">
       <>
-        <h2>Contact</h2>
+        <h2 className="contact-title">Contact</h2>
         <div className="contact-container">
           <p>제가 궁금하시다면? 아래로 연락주세요 😗</p>
           <p className="click gmail">

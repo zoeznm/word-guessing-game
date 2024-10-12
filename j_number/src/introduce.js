@@ -13,7 +13,7 @@ const Introduce = () => {
         <div>
           <div>
             <div>
-              <h1>Japanese Numbers charts</h1>
+              <h1 className="practice-title">Japanese Numbers charts</h1>
             </div>
           </div>
           <div>

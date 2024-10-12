@@ -58,7 +58,7 @@ const GamePage = () => {
   if (questionIndex >= filteredQuestions.length) {
     return (
       <div className="game-container">
-        <h1>게임 끝!</h1>
+        <h1>Result!</h1>
         <p>점수: {score}</p>
         <button onClick={handleRestart} className="retry-button">다시 시작하기</button>
         <button onClick={handleHome} className="next-button">홈으로 가기</button>

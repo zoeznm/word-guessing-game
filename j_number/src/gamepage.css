@@ -10,6 +10,15 @@
   max-width: 600px; /* 최대 너비 */
   margin: 200px auto; /* 중앙 정렬 */
 }
+.game-container > h1 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+}
+.retry-button {
+  margin-right: 30px;
+}
 
 h2 {
   font-size: 3rem;
@@ -47,10 +56,6 @@ h3 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .answer-button:hover {

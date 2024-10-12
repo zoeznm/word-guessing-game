@@ -14,7 +14,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-h2 {
+.contact-title{
 position: absolute;
 top: 10%;
 left: 0;
