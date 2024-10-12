@@ -1,56 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Mochiy+Pop+P+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
 h2 {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+position: absolute;
+top: 10%;
+left: 0;
+width: 100vw;
+padding-left: 10%;
+}
+a {
+  color: #333;
+  text-decoration: none;
 }
 .contact-container {
-  text-align: center;
-  padding: 40px;
-  margin: 20px auto;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px; /* 최대 너비 조정 */
-}
-
-.contact-container h2 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.contact-container p {
-  color: #555;
-  line-height: 1.6; /* 줄 간격 조정 */
-  font-size: 1.1rem; /* 폰트 크기 조정 */
-}
-
-.contact-container a {
-  color: #008CBA; /* 링크 색상 */
-  text-decoration: none; /* 링크 밑줄 제거 */
-}
-
-.contact-container a:hover {
-  text-decoration: underline; /* 링크 hover 시 밑줄 추가 */
-}
-
-.home {
   position: absolute;
-  top: 10%;
-  right: 15%;
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #00bbff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  top: 20%;
+  left: 10%;
+  text-align: center;
+  padding: 100px;
+  border-radius: 10px;
+  max-width: 800px; /* 최대 너비 조정 */
+  display: flex;
+  height: 200px;
+  flex-direction: column;
 }
+.click {
+  background-color: #f8f9fa;
+  width: 80px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 10px;
+  padding-top: 20px;
+  color: #333;
+}
+.gmail {
+position: absolute;
+top: 40%;
+left: 20%;
+}
+.github {
+position: absolute;
+top: 40%;
+left: 40%;
+}
+.instagram {
+position: absolute;
+top: 40%;
+left: 60%;
+width: 120px;
+}
+.last {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+
+
 .home {
   position: absolute;
   top: 10%;
