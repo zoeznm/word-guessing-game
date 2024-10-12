@@ -9,8 +9,8 @@ const Contact = () => {
     navigate('/'); // 홈 버튼 클릭 시 메인 페이지로 이동
   };
   return (
-    <><div className="contact-container">
-      <h2>Contact</h2>
+    <><h2>Contact</h2>
+    <div className="contact-container">
       <p>
         여러분의 의견이나 질문이 있으신가요? 언제든지 저에게 연락해 주세요!
       </p>
